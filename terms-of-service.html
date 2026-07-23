@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Supply Patch - Sourcing simplified, results amplified." />
+  <title>Terms of Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+  --navy: #043675;
+  --navy-dark: #021f46;
+  --navy-deep: #01162f;
+  --blue: #0757b8;
+  --blue-soft: #eaf2fb;
+  --ink: #10131a;
+  --muted: #6e7580;
+  --line: #e5e8ec;
+  --surface: #f7f9fc;
+  --white: #ffffff;
+  --green: #20b66a;
+  --shadow: 0 18px 45px rgba(2, 31, 70, 0.12);
+}
+
+
+/* Base */
+
+.terms-page {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.terms-page *,
+.terms-page *::before,
+.terms-page *::after {
+  box-sizing: border-box;
+}
+
+.terms-page .container {
+  width: min(1160px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.section-label {
+  margin: 0 0 13px;
+
+  color: var(--blue);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+}
+
+
+/* Hero */
+
+.terms-hero {
+  position: relative;
+
+  padding: 95px 0 85px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(7, 87, 184, 0.14),
+      transparent 38%
+    ),
+    linear-gradient(
+      180deg,
+      var(--white),
+      var(--surface)
+    );
+}
+
+.terms-hero::before {
+  content: "";
+
+  position: absolute;
+  top: -150px;
+  left: 50%;
+
+  width: 470px;
+  height: 470px;
+
+  border: 1px dashed rgba(7, 87, 184, 0.12);
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+}
+
+.terms-heading {
+  position: relative;
+  z-index: 2;
+
+  max-width: 820px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.terms-heading h1 {
+  margin: 0 0 22px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(42px, 6vw, 70px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.terms-intro {
+  max-width: 760px;
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.terms-status {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin: 27px auto 0;
+  padding: 9px 15px;
+
+  color: var(--navy);
+  background: var(--blue-soft);
+
+  border: 1px solid rgba(7, 87, 184, 0.16);
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  background: var(--blue);
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 5px rgba(7, 87, 184, 0.1);
+
+  animation: termsPulse 1.8s ease-in-out infinite;
+}
+
+
+/* Main Layout */
+
+.terms-content-section {
+  padding: 80px 0 95px;
+}
+
+.terms-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  align-items: start;
+  gap: 42px;
+}
+
+
+/* Sidebar */
+
+.terms-sidebar {
+  position: sticky;
+  top: 110px;
+}
+
+.terms-sidebar-card {
+  padding: 24px;
+
+  background: var(--white);
+
+  border: 1px solid var(--line);
+  border-radius: 15px;
+
+  box-shadow: var(--shadow);
+}
+
+.sidebar-label {
+  margin: 0 0 15px;
+
+  color: var(--blue);
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.terms-nav {
+  display: grid;
+  gap: 4px;
+}
+
+.terms-nav a {
+  display: block;
+
+  padding: 10px 11px;
+
+  color: var(--muted);
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.terms-nav a:hover {
+  color: var(--navy);
+  background: var(--blue-soft);
+
+  transform: translateX(4px);
+}
+
+.terms-updated {
+  display: grid;
+  gap: 1px;
+
+  margin-top: 20px;
+  padding-top: 18px;
+
+  border-top: 1px solid var(--line);
+}
+
+.terms-updated span {
+  color: var(--muted);
+
+  font-size: 10px;
+}
+
+.terms-updated strong {
+  color: var(--navy);
+
+  font-size: 13px;
+}
+
+
+/* Terms Cards */
+
+.terms-document {
+  display: grid;
+  gap: 20px;
+}
+
+.terms-card {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 22px;
+
+  padding: 32px;
+
+  background: var(--white);
+
+  border: 1px solid var(--line);
+  border-radius: 16px;
+
+  box-shadow: var(--shadow);
+
+  scroll-margin-top: 120px;
+
+  transition:
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.terms-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(7, 87, 184, 0.24);
+
+  box-shadow:
+    0 23px 55px rgba(2, 31, 70, 0.14);
+}
+
+.terms-number {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--blue);
+  background: var(--blue-soft);
+
+  border: 1px solid rgba(7, 87, 184, 0.15);
+  border-radius: 12px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.terms-card-content h2 {
+  margin: 0 0 13px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.terms-card-content p {
+  margin: 0 0 13px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.terms-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Contact Card */
+
+.terms-contact-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(234, 242, 251, 0.78),
+      var(--white) 48%
+    );
+}
+
+.terms-email {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+
+  margin: 6px 0 14px;
+  padding: 13px 17px;
+
+  color: var(--navy);
+  background: var(--white);
+
+  border: 1px solid rgba(7, 87, 184, 0.2);
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.terms-email:hover {
+  color: var(--white);
+  background: var(--navy);
+
+  transform: translateY(-2px);
+}
+
+.terms-email-icon {
+  width: 35px;
+  height: 35px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--white);
+  background: var(--blue);
+
+  border-radius: 8px;
+}
+
+.terms-email small {
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.terms-email:hover small {
+  color: #d6e4f4;
+}
+
+.terms-assistance {
+  color: var(--navy) !important;
+  font-weight: 700;
+}
+
+
+/* Bottom Navigation */
+
+.terms-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 20px 23px;
+
+  background: var(--white);
+
+  border: 1px solid var(--line);
+  border-radius: 13px;
+
+  box-shadow: var(--shadow);
+}
+
+.back-policy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: var(--navy);
+
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.back-policy-link span {
+  font-size: 18px;
+}
+
+.back-policy-link:hover {
+  color: var(--blue);
+
+  transform: translateX(-3px);
+}
+
+.bottom-updated {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+}
+
+.bottom-updated strong {
+  color: var(--navy);
+}
+
+
+/* Interim Note */
+
+.terms-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 22px 24px;
+
+  color: #d8e6f6;
+
+  background:
+    linear-gradient(
+      125deg,
+      var(--navy-deep),
+      var(--navy)
+    );
+
+  border-radius: 14px;
+}
+
+.terms-note-icon {
+  width: 28px;
+  height: 28px;
+
+  flex: 0 0 28px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--navy);
+  background: var(--white);
+
+  border-radius: 50%;
+
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.terms-note p {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+
+/* CTA */
+
+.terms-cta {
+  position: relative;
+
+  padding: 65px 0;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      110deg,
+      var(--navy-deep),
+      var(--navy) 68%,
+      var(--blue)
+    );
+}
+
+.terms-cta::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.1;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.15) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.15) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+}
+
+.terms-cta-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.terms-cta .section-label {
+  color: #8fbee9;
+}
+
+.terms-cta h2 {
+  margin: 0 0 8px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.terms-cta p {
+  max-width: 650px;
+  margin: 0;
+
+  color: #d5e4f4;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.terms-button {
+  flex-shrink: 0;
+
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 22px;
+
+  color: var(--navy);
+  background: var(--white);
+
+  border: 1px solid var(--white);
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.18);
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.terms-button:hover {
+  color: var(--white);
+  background: transparent;
+
+  transform: translateY(-3px);
+}
+
+
+/* Animation */
+
+@keyframes termsPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 5px rgba(7, 87, 184, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(7, 87, 184, 0.04);
+  }
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .terms-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .terms-sidebar {
+    position: static;
+  }
+
+  .terms-nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .terms-updated {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 680px) {
+
+  .terms-page .container {
+    width: min(100% - 28px, 1160px);
+  }
+
+  .terms-hero {
+    padding: 68px 0 60px;
+  }
+
+  .terms-content-section {
+    padding: 55px 0 70px;
+  }
+
+  .terms-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .terms-card {
+    grid-template-columns: 1fr;
+
+    padding: 25px;
+  }
+
+  .terms-number {
+    width: 43px;
+    height: 43px;
+  }
+
+  .terms-card-content h2 {
+    font-size: 21px;
+  }
+
+  .terms-bottom-bar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .terms-cta-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 450px) {
+
+  .terms-heading h1 {
+    font-size: 40px;
+  }
+
+  .terms-intro {
+    font-size: 14px;
+  }
+
+  .terms-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .terms-card {
+    padding: 22px;
+  }
+
+  .terms-email {
+    width: 100%;
+
+    overflow-wrap: anywhere;
+  }
+
+  .terms-note {
+    flex-direction: column;
+  }
+
+  .terms-button {
+    width: 100%;
+  }
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .status-dot {
+    animation: none;
+  }
+
+  .terms-card,
+  .terms-nav a,
+  .terms-email,
+  .back-policy-link,
+  .terms-button {
+    transition: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="Supply Patch home">
+        <img src="logo.png" alt="Supply Patch logo" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="#categories">Brands We Carry</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- <a class="btn btn-outline" href="#sell">Sell to Us</a> -->
+        <a class="btn btn-primary" href="#buy">Buy From Us</a>
+      </div>
+    </div>
+  </header>
+
+    <main class="terms-page">
+
+  <!-- Hero -->
+  <section class="terms-hero">
+    <div class="container">
+
+      <div class="terms-heading">
+        <p class="section-label">IN PREPARATION</p>
+
+        <h1>Terms of Service</h1>
+
+        <p class="terms-intro">
+          Our complete Terms of Service are currently being finalized. Until
+          the full version is published, the summary below outlines what you
+          can expect when working with Supply Patch Distribution.
+        </p>
+
+        <div class="terms-status">
+          <span class="status-dot"></span>
+          Full terms currently being finalized
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Terms Content -->
+  <section class="terms-content-section">
+    <div class="container terms-layout">
+
+      <!-- Sidebar -->
+      <aside class="terms-sidebar">
+        <div class="terms-sidebar-card">
+
+          <p class="sidebar-label">ON THIS PAGE</p>
+
+          <nav class="terms-nav">
+            <a href="#what-we-do">What we do</a>
+            <a href="#inquiries-orders">Inquiries & Orders</a>
+            <a href="#information-submit">Information you submit</a>
+            <a href="#availability-pricing">
+              Product availability & pricing
+            </a>
+            <a href="#get-in-touch">Get in touch</a>
+          </nav>
+
+          <div class="terms-updated">
+            <span>Last Updated</span>
+            <strong>July 2026</strong>
+          </div>
+
+        </div>
+      </aside>
+
+
+      <!-- Document -->
+      <article class="terms-document">
+
+        <section class="terms-card" id="what-we-do">
+          <div class="terms-number">01</div>
+
+          <div class="terms-card-content">
+            <h2>What we do.</h2>
+
+            <p>
+              Supply Patch Distribution provides authentic branded wholesale
+              inventory to retailers, wholesalers, distributors, and
+              eCommerce businesses.
+            </p>
+
+            <p>
+              All purchases are subject to product availability and written
+              confirmation. Pricing, quantities, shipping terms, and payment
+              conditions are agreed upon before any order is processed.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="terms-card" id="inquiries-orders">
+          <div class="terms-number">02</div>
+
+          <div class="terms-card-content">
+            <h2>Inquiries &amp; Orders.</h2>
+
+            <p>
+              Submitting an inquiry, requesting a quote, or contacting our team
+              does not create a binding agreement or guarantee product
+              availability.
+            </p>
+
+            <p>
+              All orders are confirmed only after pricing, inventory, and
+              order details have been reviewed and accepted by both parties.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="terms-card" id="information-submit">
+          <div class="terms-number">03</div>
+
+          <div class="terms-card-content">
+            <h2>Information you submit.</h2>
+
+            <p>
+              Information provided through our website, including contact
+              forms, quote requests, and account inquiries, is securely stored
+              and used only to respond to your requests, provide inventory
+              information, and communicate regarding products and services.
+            </p>
+
+            <p>
+              We do not sell or share your personal information with third
+              parties except as required to fulfill our services or comply
+              with applicable laws.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="terms-card" id="availability-pricing">
+          <div class="terms-number">04</div>
+
+          <div class="terms-card-content">
+            <h2>Product availability &amp; pricing.</h2>
+
+            <p>
+              We strive to ensure all product descriptions, inventory
+              information, and pricing are accurate and up to date.
+            </p>
+
+            <p>
+              However, inventory levels, product availability, and wholesale
+              pricing may change without notice. Final pricing and product
+              availability are confirmed at the time your order is accepted.
+            </p>
+          </div>
+        </section>
+
+
+        <section
+          class="terms-card terms-contact-card"
+          id="get-in-touch"
+        >
+          <div class="terms-number">05</div>
+
+          <div class="terms-card-content">
+            <h2>Get in touch.</h2>
+
+            <p>
+              If you have questions about our Terms of Service or working with
+              Supply Patch Distribution, please contact our team.
+            </p>
+
+            <a
+              href="mailto:adam.james@supplypatch.com"
+              class="terms-email"
+            >
+              <span class="terms-email-icon">✉</span>
+
+              <span>
+                <small>Email</small>
+                adam.james@supplypatch.com
+              </span>
+            </a>
+
+            <p class="terms-assistance">
+              We'll be happy to assist you.
+            </p>
+          </div>
+        </section>
+
+
+        <!-- Bottom Navigation -->
+        <div class="terms-bottom-bar">
+
+          <a
+            href="privacy-policy.html"
+            class="back-policy-link"
+          >
+            <span>←</span>
+            Privacy Policy
+          </a>
+
+          <div class="bottom-updated">
+            <span>Last Updated:</span>
+            <strong>July 2026</strong>
+          </div>
+
+        </div>
+
+
+        <!-- Temporary Notice -->
+        <div class="terms-note">
+          <div class="terms-note-icon">i</div>
+
+          <p>
+            This page is an interim summary while the complete Terms of Service
+            are being finalized. The published terms may include additional
+            provisions relating to payments, freight, returns, order
+            cancellation, liability, warranties, and dispute resolution.
+          </p>
+        </div>
+
+      </article>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="terms-cta">
+    <div class="container">
+
+      <div class="terms-cta-content">
+
+        <div>
+          <p class="section-label">NEED CLARIFICATION?</p>
+
+          <h2>Have a Question About an Order?</h2>
+
+          <p>
+            Contact our team to discuss product availability, pricing,
+            quantities, shipping, payment conditions, or order requirements.
+          </p>
+        </div>
+
+        <a
+          href="mailto:adam.james@supplypatch.com"
+          class="terms-button"
+        >
+          Contact Our Team
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+    
+<footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Supply Patch" />
+        <p>Your source for brand-name wholesale and liquidation inventory for retailers, resellers and ecommerce
+          businesses.</p>
+        <div class="socials">
+          <a href="#" aria-label="WhatsApp">◉</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Email">✉</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>COMPANY</h4><a href="#about">About Us</a><a href="#services">Our Services</a><a href="#categories">Brands We
+          Carry</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>FOR BUYERS</h4><a href="#categories">Brands</a><a href="#contact">Request a Quote</a><a
+          href="#buy">Shipping</a><a href="#contact">FAQs</a>
+      </div>
+      <div>
+        <h4>FOR SELLERS</h4><a href="#sell">Sell to Us</a><a href="#sell">Liquidation Process</a><a
+          href="#contact">Partner With Us</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>Copyright © 2026 Supply Patch. All rights reserved.</p>
+      <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
