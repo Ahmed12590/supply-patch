@@ -15,30 +15,31 @@
 </head>
 
 <body>
-<!-- ///loder code /// -->
-<div class="site-loader" id="siteLoader" aria-label="Loading website">
-  <div class="loader-inner">
-    <div class="loader-logo-wrap">
-      <img src="logo.png" alt="Supply Patch" class="loader-logo">
 
-      <span class="loader-ring"></span>
-      <span class="loader-ring loader-ring-2"></span>
-    </div>
+  <!-- ///loder code /// -->
+  <div class="site-loader" id="siteLoader" aria-label="Loading website">
+    <div class="loader-inner">
+      <div class="loader-logo-wrap">
+        <img src="logo.png" alt="Supply Patch" class="loader-logo">
 
-    <p>Connecting you to better inventory</p>
+        <span class="loader-ring"></span>
+        <span class="loader-ring loader-ring-2"></span>
+      </div>
 
-    <div class="loader-progress">
-      <span></span>
+      <p>Connecting you to better inventory</p>
+
+      <div class="loader-progress">
+        <span></span>
+      </div>
     </div>
   </div>
-</div>
 
 
 
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#home" class="brand" aria-label="Supply Patch home">
+      <a href="index.html" class="brand" aria-label="Supply Patch home">
         <img src="logo.png" alt="Supply Patch logo" />
       </a>
 
@@ -47,15 +48,15 @@
       </button>
 
       <nav class="main-nav">
-        <a class="active" href="#home">Home</a>
-        <a href="#services">Services</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="services.html">Services</a>
         <a href="#categories">Brands We Carry</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-outline" href="#sell">Sell to Us</a>
+        <!-- <a class="btn btn-outline" href="#sell">Sell to Us</a> -->
         <a class="btn btn-primary" href="#buy">Buy From Us</a>
       </div>
     </div>
@@ -84,17 +85,19 @@
       </div>
 
       <div class="container hero-content">
-        <p class="eyebrow">WHOLESALE & LIQUIDATION</p>
-        <h1>The Inventory<br><span>Your Business Needs</span></h1>
+        <p class="eyebrow">TRUSTED WHOLESALE DISTRIBUTOR</p>
+        <h1>Reliable Inventory<br><span>Built for Growing Businesses</span></h1>
         <p class="hero-copy">
-          Supply Patch connects retailers, resellers and online businesses with
-          trusted brand-name wholesale, overstock and liquidation inventory.
+          Supply Patch Distribution connects retailers and online sellers with authentic wholesale products from leading
+          brands. Whether you sell on Amazon, Walmart, Shopify, or operate a retail store, we provide consistent
+          inventory, competitive wholesale pricing, and dependable fulfillment to help your business scale.
         </p>
         <div class="hero-actions">
-          <a href="#buy" class="btn btn-light">Buy From Us</a>
-          <a href="#categories" class="btn btn-ghost">Browse Brands</a>
+          <a href="#buy" class="btn btn-light">Browse Products</a>
+          <a href="#categories" class="btn btn-ghost">Apply for Wholesale</a>
         </div>
-        <p class="trust-line">Trusted by retailers, resellers and marketplace sellers nationwide</p>
+        <p class="trust-line">Trusted by retailers, distributors, and online sellers nationwide.<br>
+          Amazon • Walmart • Shopify • eBay • Retail Stores</p>
       </div>
     </section>
 
@@ -334,18 +337,18 @@
   <script>
     document.body.classList.add("loading");
 
-window.addEventListener("load", function () {
-  const loader = document.getElementById("siteLoader");
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("siteLoader");
 
-  setTimeout(function () {
-    loader.classList.add("loader-hidden");
-    document.body.classList.remove("loading");
+      setTimeout(function () {
+        loader.classList.add("loader-hidden");
+        document.body.classList.remove("loading");
 
-    setTimeout(function () {
-      loader.remove();
-    }, 700);
-  }, 650);
-});
+        setTimeout(function () {
+          loader.remove();
+        }, 700);
+      }, 650);
+    });
   </script>
 </body>
 
