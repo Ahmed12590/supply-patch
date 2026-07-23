@@ -1,3 +1,4 @@
+
 :root {
   --navy: #043675;
   --navy-dark: #021f46;
@@ -695,8 +696,8 @@ body.loading {
 }
 
 .partner-grid {
-  display: grid;
-  grid-template-columns: 1fr 50px 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 50px 1fr; */
   align-items: center;
   max-width: 850px;
   margin: auto;
@@ -797,11 +798,32 @@ body.loading {
   background: var(--navy);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 55px;
+.contact-center{
+    max-width:650px;
+    margin:0 auto;
+    text-align:center;
 }
+
+.contact-center h2{
+    font-size:40px;
+    margin:0 0 20px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+}
+
+.contact-form .btn{
+    align-self:center;
+}
+
 .contact-grid h2 {
   font-size: 30px;
   margin: 0 0 20px;
@@ -988,9 +1010,9 @@ footer {
   .testimonial-track {
     grid-template-columns: 1fr;
   }
-  .contact-grid {
+  /* .contact-grid {
     grid-template-columns: 1fr;
-  }
+  } */
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1543,6 +1565,7 @@ footer {
 }
 
 /* ///// about csss end /////// */
+
 
 /* Services Intro */
 

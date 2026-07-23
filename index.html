@@ -101,14 +101,88 @@
       </div>
     </section>
 
-    <section class="brand-strip" aria-label="Partner brands">
-      <div class="container brand-row">
-        <span>GE APPLIANCES</span>
-        <span>HISENSE</span>
-        <span>HOT TOOLS</span>
-        <span>ILLY</span>
-        <span>MONOPOLY</span>
+
+    <section class="brand-strip" aria-label="Partner Brands">
+
+      <style>
+        .brand-strip {
+          background: #fff;
+          padding: 35px 0;
+          overflow: hidden;
+        }
+
+        .brand-slider {
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .brand-track {
+          display: flex;
+          align-items: center;
+          width: max-content;
+          animation: brandScroll 28s linear infinite;
+        }
+
+        .brand-track img {
+          width: 170px;
+          height: 80px;
+          object-fit: contain;
+          margin: 0 45px;
+          flex-shrink: 0;
+          transition: .3s;
+        }
+
+        .brand-track img:hover {
+          transform: scale(1.08);
+        }
+
+        @keyframes brandScroll {
+          from {
+            transform: translateX(0);
+          }
+
+          to {
+            transform: translateX(-50%);
+          }
+        }
+
+        @media(max-width:768px) {
+          .brand-track img {
+            width: 120px;
+            height: 60px;
+            margin: 0 20px;
+          }
+        }
+      </style>
+
+      <div class="brand-slider">
+        <div class="brand-track">
+
+          <!-- First Set -->
+          <img src="brandlogo/Devoko.png" alt="Brand 1">
+          <img src="brandlogo/DeWalt.png" alt="Brand 2">
+          <img src="brandlogo/Immuenti.png" alt="Brand 3">
+          <img src="brandlogo/ryobi.png" alt="Brand 4">
+          <img src="brandlogo/Soothing Touch.png" alt="Brand 5">
+          <img src="brandlogo/Tick Nipper.gif" alt="Brand 6">
+          <img src="brandlogo/Dew of the Gods.avif" alt="Brand 7">
+          <img src="brandlogo/download.jfif" alt="Brand 8">
+          <img src="brandlogo/Sterilite.jfif" alt="Brand 9">
+
+          <!-- Duplicate -->
+          <img src="brandlogo/Devoko.png" alt="Brand 1">
+          <img src="brandlogo/DeWalt.png" alt="Brand 2">
+          <img src="brandlogo/Immuenti.png" alt="Brand 3">
+          <img src="brandlogo/ryobi.png" alt="Brand 4">
+          <img src="brandlogo/Soothing Touch.png" alt="Brand 5">
+          <img src="brandlogo/Tick Nipper.gif" alt="Brand 6">
+          <img src="brandlogo/Dew of the Gods.avif" alt="Brand 7">
+          <img src="brandlogo/download.jfif" alt="Brand 8">
+          <img src="brandlogo/Sterilite.jfif" alt="Brand 9">
+
+        </div>
       </div>
+
     </section>
 
     <section class="section categories-section" id="categories">
@@ -116,14 +190,17 @@
         <div class="section-heading">
           <p class="eyebrow blue">PRODUCT CATEGORIES</p>
           <h2>Browse Our <span>Product Categories</span></h2>
-          <p>Explore high-demand inventory across the categories your customers already know and buy.</p>
+          <p>Explore our wholesale product categories featuring trusted brand-name inventory across multiple industries.
+            Supply Patch Distribution provides retailers, resellers, Amazon sellers, and eCommerce businesses with
+            quality products and reliable sourcing solutions.</p>
         </div>
 
         <div class="category-grid">
           <article class="category-card beauty">
             <div class="category-icon">🧴</div>
             <div>
-              <h3>Beauty & Personal Care</h3><a href="#">View more</a>
+              <h3>Beauty & Personal Care</h3>
+              <a href="#">View more</a>
             </div>
           </article>
           <article class="category-card kitchen">
@@ -164,28 +241,33 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow blue">WHO WE SERVE</p>
-          <h2>Brand Name Inventory Made Simple for<br><span>Retailers and Resellers</span></h2>
+          <h2>Wholesale Inventory Made Simple for<br><span>Retailers and Resellers</span></h2>
           <p>
-            Whether you sell online, operate a storefront, source closeouts or buy in bulk,
-            our inventory options are designed around how you sell.
+            Supply Patch Distribution helps Amazon sellers, Walmart sellers, retailers, distributors, and online
+            resellers source authentic wholesale inventory through trusted wholesale partnerships. We provide
+            transparent product information, reliable fulfillment, and inventory opportunities that help businesses grow
+            with confidence.
           </p>
         </div>
 
         <div class="service-grid" id="services">
           <article>
             <div class="service-icon">🛒</div>
-            <h3>Online Sellers</h3>
-            <p>Brand-name products selected for Amazon, Walmart, eBay and independent stores.</p>
+            <h3>Amazon & Online Sellers</h3>
+            <p>For Amazon, Walmart, eBay, TikTok Shop, and other online sellers looking for authentic wholesale
+              inventory they can confidently source, replenish, and scale with.</p>
           </article>
           <article>
             <div class="service-icon">📦</div>
-            <h3>Liquidation Deals</h3>
-            <p>Closeout, overstock and shelf-pull inventory with clear condition and lot details.</p>
+            <h3>Wholesale Distribution</h3>
+            <p>Access genuine wholesale products sourced through trusted distribution channels. We offer transparent
+              pricing, reliable inventory, and professional prep and shipping services to keep your business moving.</p>
           </article>
           <article>
             <div class="service-icon">🏬</div>
-            <h3>Wholesalers & Retailers</h3>
-            <p>Bulk inventory across recognizable categories that your customers already trust.</p>
+            <h3>Retailers & Bulk Buyers</h3>
+            <p>Whether you're an independent retailer, chain store, distributor, or bulk purchaser, we provide volume
+              pricing and dependable inventory solutions across recognized consumer brands.</p>
           </article>
         </div>
       </div>
@@ -195,26 +277,28 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow blue">GET STARTED</p>
-          <h2>Ready to <span>partner</span> with us?</h2>
-          <p>Buy wholesale inventory or sell your excess stock through a straightforward process.</p>
+          <h2>Let's <span>Grow Together</span></h2>
+          <p>Whether you're purchasing wholesale inventory or looking for a trusted distribution partner, Supply Patch
+            is here to help your business succeed. </p>
         </div>
 
         <div class="partner-grid">
           <article id="buy">
             <div class="partner-icon">🛍️</div>
-            <h3>Buy From Us</h3>
-            <p>Wholesale pricing, liquidation deals and inventory across 100+ recognized brands.</p>
-            <a href="#contact" class="btn btn-primary">Register as a Buyer</a>
+            <h3>Buy Wholesale</h3>
+            <p>Browse authentic products backed by transparent <br>pricing, reliable inventory, and fast fulfillment.
+            </p>
+            <a href="#contact" class="btn btn-primary">Become a Supplier</a>
           </article>
 
-          <div class="partner-divider">/</div>
+          <!-- <div class="partner-divider">/</div>
 
           <article id="sell">
             <div class="partner-icon">📤</div>
             <h3>Sell To Us</h3>
             <p>Have inventory to move? Share your catalog and connect with our buying team.</p>
             <a href="#contact" class="btn btn-primary">Register as a Vendor</a>
-          </article>
+          </article> -->
         </div>
       </div>
     </section>
@@ -222,31 +306,34 @@
     <section class="section testimonials">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow blue">WHAT OUR BUYERS SAY</p>
-          <h2>Trusted by <span>retailers and online sellers</span></h2>
+          <p class="eyebrow blue">WHAT OUR CUSTOMERS SAY</p>
+          <h2>The sourcing partner <span>trusted by 1,000+ online sellers</span></h2>
         </div>
 
         <div class="testimonial-slider">
           <div class="testimonial-track">
             <article class="testimonial-card">
               <div class="stars">★★★★★</div>
-              <p>“Supply Patch made it easier for us to source inventory without chasing random deals every week.”</p>
-              <div class="person"><span>MT</span>
-                <div><strong>Marcus T.</strong><small>Online Reseller</small></div>
+              <p>"We've been able to source quality inventory much faster since using this platform. The selection is
+                reliable, prices are competitive, and ordering is always straightforward."</p>
+              <div class="person"><span>JM</span>
+                <div><strong>Jason Miller</strong><small>Ecommerce Seller</small></div>
               </div>
             </article>
             <article class="testimonial-card">
               <div class="stars">★★★★★</div>
-              <p>“The lot details are clear, communication is fast and the product mix works well for our store.”</p>
-              <div class="person"><span>SK</span>
-                <div><strong>Sarah K.</strong><small>Retail Buyer</small></div>
+              <p>"The flexible order quantities let us test new products without taking unnecessary risks. It's become
+                one of our go-to sourcing partners."</p>
+              <div class="person"><span>EC</span>
+                <div><strong>Emily Carter</strong><small>Marketplace Retailer</small></div>
               </div>
             </article>
             <article class="testimonial-card">
               <div class="stars">★★★★★</div>
-              <p>“A dependable sourcing partner for recognizable brands and profitable closeout opportunities.”</p>
-              <div class="person"><span>DR</span>
-                <div><strong>David R.</strong><small>Marketplace Seller</small></div>
+              <p>"Finding trusted brands at consistent pricing has made scaling our business much easier. The process is
+                smooth, transparent, and dependable."</p>
+              <div class="person"><span>DB</span>
+                <div><strong>Daniel Brooks</strong><small>Retail Business Owner</small></div>
               </div>
             </article>
           </div>
@@ -260,40 +347,27 @@
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow blue">STAY CONNECTED</p>
-          <h2>Get inventory updates and deal alerts</h2>
+      <div class="container">
 
-          <div class="info-card">
-            <h4>NEWSLETTER</h4>
-            <p>Get updates on new wholesale deals, liquidation inventory, brand drops and buyer opportunities.</p>
-            <form class="newsletter-form">
-              <input type="email" placeholder="Enter your email" required />
-              <button class="btn btn-primary" type="submit">Subscribe</button>
-            </form>
-          </div>
-
-          <div class="info-card whatsapp">
-            <h4>WHATSAPP</h4>
-            <p>Get faster deal alerts, inventory updates and direct access to the Supply Patch team.</p>
-            <a href="#" class="whatsapp-btn">Join WhatsApp Group</a>
-          </div>
-        </div>
-
-        <div>
+        <div class="contact-center">
           <p class="eyebrow blue">GET IN TOUCH</p>
-          <h2>Have a Question?</h2>
+          <h2>Contact Our Distribution Team</h2>
+          <p>Whether you're looking to source branded inventory, discuss bulk purchasing, or explore a distribution
+            partnership, our team is here to help. Send us a message, and we'll get back to you as soon as possible.</p>
 
           <form class="contact-form">
-            <p>Send us a message about buying inventory, selling stock or working with Supply Patch.</p>
-            <input type="text" placeholder="Your name" required />
-            <input type="email" placeholder="Email address" required />
+            <p>A trusted distribution partner delivering authentic branded inventory to retailers, resellers, and
+              eCommerce businesses nationwide.</p>
+
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
             <textarea rows="5" placeholder="How can we help?" required></textarea>
+
             <button class="btn btn-primary" type="submit">Send Message</button>
             <span class="form-message" role="status"></span>
           </form>
         </div>
+
       </div>
     </section>
   </main>
