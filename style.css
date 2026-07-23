@@ -270,33 +270,40 @@ body.loading {
   border-bottom: 1px solid rgba(4, 54, 117, 0.08);
   backdrop-filter: blur(14px);
 }
+
 .nav-wrap {
   min-height: 82px;
   display: flex;
   align-items: center;
   gap: 28px;
+  position: relative;
 }
+
 .brand {
   width: 150px;
   flex-shrink: 0;
 }
+
 .brand img {
   width: 100%;
   height: 52px;
   object-fit: contain;
 }
+
 .main-nav {
   display: flex;
   align-items: center;
   gap: 28px;
   margin-left: auto;
 }
+
 .main-nav a {
   font-size: 14px;
   font-weight: 700;
   color: #303641;
   position: relative;
 }
+
 .main-nav a::after {
   content: "";
   position: absolute;
@@ -308,17 +315,21 @@ body.loading {
   transform: scaleX(0);
   transition: 0.25s;
 }
+
 .main-nav a:hover::after,
 .main-nav a.active::after {
   transform: scaleX(1);
 }
+
 .main-nav a.active {
   color: var(--blue);
 }
+
 .nav-actions {
   display: flex;
   gap: 10px;
 }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -331,37 +342,62 @@ body.loading {
   cursor: pointer;
   transition: 0.25s;
 }
+
 .btn:hover {
   transform: translateY(-2px);
 }
+
 .btn-primary {
   background: var(--navy);
   color: #fff;
   box-shadow: 0 9px 20px rgba(4, 54, 117, 0.18);
 }
+
 .btn-primary:hover {
   background: var(--navy-dark);
 }
+
 .btn-outline {
   border-color: var(--navy);
   color: var(--navy);
   background: white;
 }
+
 .btn-outline:hover {
   background: var(--blue-soft);
 }
+
 .menu-toggle {
   display: none;
   border: 0;
   background: transparent;
   padding: 6px;
 }
+
 .menu-toggle span {
   display: block;
   width: 24px;
   height: 2px;
   background: var(--navy);
   margin: 5px;
+}
+
+/* ===========================
+   Desktop Only Navigation
+=========================== */
+@media (min-width: 992px) {
+
+  .main-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
 }
 
 .hero {
