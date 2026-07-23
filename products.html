@@ -128,184 +128,91 @@
       </div>
 
 
-      <div class="product-grid">
+      <!-- Product Catalog -->
+<div class="product-catalog">
 
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">Health &amp; Beauty</span>
-            <div class="product-placeholder">🧴</div>
-          </div>
+  <!-- Category Toggle Buttons -->
+  <div
+    class="product-category-tabs"
+    role="tablist"
+    aria-label="Product categories"
+  >
+    <button
+      type="button"
+      class="product-tab active"
+      data-category="beauty"
+      role="tab"
+      aria-selected="true"
+    >
+      Beauty &amp; Personal Care
+    </button>
 
-          <div class="product-card-content">
-            <h3>Health &amp; Beauty</h3>
+    <button
+      type="button"
+      class="product-tab"
+      data-category="home"
+      role="tab"
+      aria-selected="false"
+    >
+      Home &amp; Kitchen
+    </button>
 
-            <p>
-              Skincare, haircare, cosmetics, grooming products, wellness
-              essentials, and personal care inventory.
-            </p>
+    <button
+      type="button"
+      class="product-tab"
+      data-category="health"
+      role="tab"
+      aria-selected="false"
+    >
+      Health &amp; Wellness
+    </button>
 
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
+    <button
+      type="button"
+      class="product-tab"
+      data-category="sports"
+      role="tab"
+      aria-selected="false"
+    >
+      Sports &amp; Outdoors
+    </button>
 
+    <button
+      type="button"
+      class="product-tab"
+      data-category="tools"
+      role="tab"
+      aria-selected="false"
+    >
+      Tools &amp; Home Improvement
+    </button>
+  </div>
 
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">Household</span>
-            <div class="product-placeholder">🧹</div>
-          </div>
+  <!-- Active Category Heading -->
+  <div class="active-category-header">
+    <div>
+      <p class="active-category-label">
+        CURRENT CATEGORY
+      </p>
 
-          <div class="product-card-content">
-            <h3>Household Essentials</h3>
+      <h3 id="activeCategoryTitle">
+        Beauty &amp; Personal Care
+      </h3>
+    </div>
 
-            <p>
-              Cleaning supplies, storage solutions, kitchen essentials, home
-              care products, and everyday household inventory.
-            </p>
+    <p id="activeCategoryCount">
+      10 products available
+    </p>
+  </div>
 
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
+  <!-- Products JavaScript se show honge -->
+  <div
+    class="catalog-product-grid"
+    id="catalogProductGrid"
+    aria-live="polite"
+  ></div>
 
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">Grocery</span>
-            <div class="product-placeholder">🥫</div>
-          </div>
-
-          <div class="product-card-content">
-            <h3>Grocery &amp; Pantry</h3>
-
-            <p>
-              Packaged foods, beverages, snacks, pantry staples, and branded
-              grocery products for retail and online sales.
-            </p>
-
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">Baby</span>
-            <div class="product-placeholder">🍼</div>
-          </div>
-
-          <div class="product-card-content">
-            <h3>Baby Products</h3>
-
-            <p>
-              Baby care, feeding products, diapers, wipes, bath products, and
-              trusted essentials for parents and families.
-            </p>
-
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">Pet Supplies</span>
-            <div class="product-placeholder">🐾</div>
-          </div>
-
-          <div class="product-card-content">
-            <h3>Pet Supplies</h3>
-
-            <p>
-              Pet care products, accessories, grooming supplies, feeding
-              essentials, toys, and general pet merchandise.
-            </p>
-
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">Personal Care</span>
-            <div class="product-placeholder">🧼</div>
-          </div>
-
-          <div class="product-card-content">
-            <h3>Personal Care</h3>
-
-            <p>
-              Hygiene products, oral care, bath and body products, grooming
-              essentials, and everyday personal care inventory.
-            </p>
-
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">Office</span>
-            <div class="product-placeholder">📎</div>
-          </div>
-
-          <div class="product-card-content">
-            <h3>Office Supplies</h3>
-
-            <p>
-              Stationery, organization products, school supplies, desk
-              accessories, and workplace essentials.
-            </p>
-
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="product-card">
-          <div class="product-image">
-            <span class="product-badge">General Merchandise</span>
-            <div class="product-placeholder">📦</div>
-          </div>
-
-          <div class="product-card-content">
-            <h3>General Merchandise</h3>
-
-            <p>
-              A broad mix of branded products across seasonal, retail,
-              convenience, lifestyle, and everyday-use categories.
-            </p>
-
-            <a href="contact.html">
-              Request Availability
-              <span>→</span>
-            </a>
-          </div>
-        </article>
-
-      </div>
+</div>
 
     </div>
   </section>
