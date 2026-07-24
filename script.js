@@ -137,49 +137,59 @@ const productCatalog = {
     badge: "Home & Kitchen",
     products: [
       {
-        name: "Non-Stick Frying Pan",
+        name: "Industrial Storage Tote with Wheels, Black 40 Gallon",
         price: "$19.99",
-        image: "images/products/home-1.jpg"
+        image: "products/home1.jpg"
       },
       {
-        name: "Stainless Steel Cookware Set",
+        name: "30 Gallon Resin Deck Box Waterproof Outdoor Storage Box",
         price: "$54.99",
-        image: "images/products/home-2.jpg"
+        image: "products/home2webp_.webp"
       },
       {
-        name: "Electric Coffee Maker",
+        name: "Industrial Storage Tote with Wheels, Black 40 Gallon",
         price: "$29.50",
-        image: "images/products/home-3.jpg"
+        image: "products/home3.jpg"
       },
       {
-        name: "Digital Air Fryer",
+        name: "32 Gallon Wheeled Heavy Duty Plastic Garbage Can",
         price: "$44.99",
-        image: "images/products/home-4.jpg"
+         image: "products/home4.webp"
       },
       {
-        name: "Kitchen Storage Container Set",
+        name: "6 Quart Touchscreen Air Fryer",
         price: "$16.99",
-        image: "images/products/home-5.jpg"
+       image: "products/home5.webp"
       },
       {
-        name: "Premium Cutting Board",
+        name: "Bushel Plastic Laundry Hamper with 4 Ergonomic Handles",
         price: "$13.25",
-        image: "images/products/home-6.jpg"
+        image: "products/home6_.webp"
       },
       {
-        name: "Electric Hand Mixer",
+        name: "Industrial 40 Gallon Wheeled Tote Plastic Storage Bin,",
         price: "$22.99",
-        image: "images/products/home-7.jpg"
+        image: "products/home7.jpg"
       },
       {
-        name: "Microfiber Cleaning Set",
+        name: "100 Gallon Waterproof Resin Deck Box, Large Outdoor Storage Box",
         price: "$8.75",
-        image: "images/products/home-8.jpg"
+        image: "products/home8.jpg"
       },
       {
         name: "Insulated Travel Tumbler",
         price: "$14.99",
         image: "images/products/home-9.jpg"
+      },
+      {
+        name: "Kitchen Utensil Set",
+        price: "$17.50",
+        image: "images/products/home-10.jpg"
+      },
+      {
+        name: "Kitchen Utensil Set",
+        price: "$17.50",
+        image: "images/products/home-10.jpg"
       },
       {
         name: "Kitchen Utensil Set",
