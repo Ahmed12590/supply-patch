@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Supply Patch - Sourcing simplified, results amplified." />
+  <title>Shipping Terms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+
+.shipping-page {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.shipping-page *,
+.shipping-page *::before,
+.shipping-page *::after {
+  box-sizing: border-box;
+}
+
+.shipping-page .container {
+  width: min(1160px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.shipping-page h1,
+.shipping-page h2 {
+  font-family: "Manrope", sans-serif;
+}
+
+.shipping-label {
+  margin: 0 0 13px;
+
+  color: var(--blue);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+}
+
+
+/* Hero */
+
+.shipping-hero {
+  position: relative;
+
+  padding: 95px 0 85px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(7, 87, 184, 0.14),
+      transparent 38%
+    ),
+    linear-gradient(
+      180deg,
+      var(--white),
+      var(--surface)
+    );
+}
+
+.shipping-hero::before,
+.shipping-hero::after {
+  content: "";
+
+  position: absolute;
+
+  border: 1px dashed rgba(7, 87, 184, 0.12);
+  border-radius: 50%;
+}
+
+.shipping-hero::before {
+  width: 430px;
+  height: 430px;
+
+  top: -255px;
+  left: -150px;
+}
+
+.shipping-hero::after {
+  width: 380px;
+  height: 380px;
+
+  right: -200px;
+  bottom: -230px;
+}
+
+.shipping-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 840px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.shipping-hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.shipping-hero-content h1 span {
+  display: block;
+
+  margin-top: 7px;
+
+  color: var(--blue);
+}
+
+.shipping-intro {
+  max-width: 740px;
+  margin: 27px auto 0;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.shipping-status {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin: 26px auto 0;
+  padding: 9px 15px;
+
+  color: var(--navy);
+  background: var(--blue-soft);
+
+  border: 1px solid rgba(7, 87, 184, 0.16);
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.shipping-status-dot {
+  width: 8px;
+  height: 8px;
+
+  background: var(--blue);
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 5px rgba(7, 87, 184, 0.1);
+
+  animation: shippingPulse 1.8s ease-in-out infinite;
+}
+
+
+/* Main Layout */
+
+.shipping-content-section {
+  padding: 0 0 95px;
+}
+
+.shipping-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  align-items: start;
+  gap: 42px;
+}
+
+
+/* Sidebar */
+
+.shipping-sidebar {
+  position: sticky;
+  top: 110px;
+}
+
+.shipping-sidebar-card {
+  padding: 24px;
+
+  background: var(--white);
+
+  border: 1px solid var(--line);
+  border-radius: 15px;
+
+  box-shadow: var(--shadow);
+}
+
+.shipping-sidebar-label {
+  margin: 0 0 15px;
+
+  color: var(--blue);
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.shipping-nav {
+  display: grid;
+  gap: 4px;
+}
+
+.shipping-nav a {
+  display: block;
+
+  padding: 10px 11px;
+
+  color: var(--muted);
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.shipping-nav a:hover {
+  color: var(--navy);
+  background: var(--blue-soft);
+
+  transform: translateX(4px);
+}
+
+
+/* Document */
+
+.shipping-document {
+  display: grid;
+  gap: 20px;
+}
+
+.shipping-card {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 22px;
+
+  padding: 32px;
+
+  background: var(--white);
+
+  border: 1px solid var(--line);
+  border-radius: 16px;
+
+  box-shadow: var(--shadow);
+
+  scroll-margin-top: 120px;
+
+  transition:
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.shipping-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(7, 87, 184, 0.24);
+
+  box-shadow:
+    0 23px 55px rgba(2, 31, 70, 0.14);
+}
+
+.shipping-number {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--blue);
+  background: var(--blue-soft);
+
+  border: 1px solid rgba(7, 87, 184, 0.15);
+  border-radius: 12px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.shipping-card-content h2 {
+  margin: 0 0 13px;
+
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.shipping-card-content p {
+  margin: 0 0 13px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.shipping-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Inspection Alert */
+
+.shipping-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 18px;
+  padding: 15px 17px;
+
+  color: var(--navy);
+  background: var(--blue-soft);
+
+  border: 1px solid rgba(7, 87, 184, 0.15);
+  border-radius: 10px;
+}
+
+.shipping-alert-icon {
+  width: 30px;
+  height: 30px;
+
+  flex: 0 0 30px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--white);
+  background: var(--blue);
+
+  border-radius: 50%;
+
+  font-weight: 800;
+}
+
+.shipping-alert p {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+
+/* Contact */
+
+.shipping-contact-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(234, 242, 251, 0.78),
+      var(--white) 48%
+    );
+}
+
+.shipping-email {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 6px;
+  padding: 13px 17px;
+
+  color: var(--navy);
+  background: var(--white);
+
+  border: 1px solid rgba(7, 87, 184, 0.2);
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.shipping-email:hover {
+  color: var(--white);
+  background: var(--navy);
+
+  transform: translateY(-2px);
+}
+
+.shipping-email-icon {
+  width: 35px;
+  height: 35px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--white);
+  background: var(--blue);
+
+  border-radius: 8px;
+}
+
+.shipping-email small {
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.shipping-email:hover small {
+  color: #d6e4f4;
+}
+
+
+/* Note */
+
+.shipping-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 22px 24px;
+
+  color: #d8e6f6;
+
+  background:
+    linear-gradient(
+      125deg,
+      var(--navy-deep),
+      var(--navy)
+    );
+
+  border-radius: 14px;
+}
+
+.shipping-note-icon {
+  width: 28px;
+  height: 28px;
+
+  flex: 0 0 28px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--navy);
+  background: var(--white);
+
+  border-radius: 50%;
+
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.shipping-note p {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+
+/* CTA */
+
+.shipping-cta {
+  position: relative;
+
+  padding: 65px 0;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      110deg,
+      var(--navy-deep),
+      var(--navy) 68%,
+      var(--blue)
+    );
+}
+
+.shipping-cta::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.1;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.15) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.15) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+}
+
+.shipping-cta-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.shipping-cta .shipping-label {
+  color: #92bdeb;
+}
+
+.shipping-cta h2 {
+  margin: 0 0 8px;
+
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.shipping-cta p {
+  max-width: 650px;
+  margin: 0;
+
+  color: #d5e4f4;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.shipping-button {
+  flex-shrink: 0;
+
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 22px;
+
+  color: var(--navy);
+  background: var(--white);
+
+  border: 1px solid var(--white);
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.18);
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.shipping-button:hover {
+  color: var(--white);
+  background: transparent;
+
+  transform: translateY(-3px);
+}
+
+
+/* Animation */
+
+@keyframes shippingPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 5px rgba(7, 87, 184, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(7, 87, 184, 0.04);
+  }
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .shipping-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .shipping-sidebar {
+    position: static;
+  }
+
+  .shipping-nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 680px) {
+  .shipping-page .container {
+    width: min(100% - 28px, 1160px);
+  }
+
+  .shipping-hero {
+    padding: 68px 0 60px;
+  }
+
+  .shipping-content-section {
+    padding: 55px 0 70px;
+  }
+
+  .shipping-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shipping-card {
+    grid-template-columns: 1fr;
+
+    padding: 25px;
+  }
+
+  .shipping-number {
+    width: 43px;
+    height: 43px;
+  }
+
+  .shipping-card-content h2 {
+    font-size: 21px;
+  }
+
+  .shipping-cta-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 450px) {
+  .shipping-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .shipping-intro {
+    font-size: 14px;
+  }
+
+  .shipping-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .shipping-card {
+    padding: 22px;
+  }
+
+  .shipping-alert {
+    align-items: flex-start;
+  }
+
+  .shipping-email {
+    width: 100%;
+
+    overflow-wrap: anywhere;
+  }
+
+  .shipping-note {
+    flex-direction: column;
+  }
+
+  .shipping-button {
+    width: 100%;
+  }
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .shipping-status-dot {
+    animation: none;
+  }
+
+  .shipping-card,
+  .shipping-nav a,
+  .shipping-email,
+  .shipping-button {
+    transition: none;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="Supply Patch home">
+        <img src="logo.png" alt="Supply Patch logo" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- <a class="btn btn-outline" href="#sell">Sell to Us</a> -->
+        <a class="btn btn-primary" href="#buy">Buy From Us</a>
+      </div>
+    </div>
+  </header>
+<main class="shipping-page">
+
+  <!-- Hero -->
+  <section class="shipping-hero">
+    <div class="container">
+
+      <div class="shipping-hero-content">
+        <p class="shipping-label">SHIPPING TERMS</p>
+
+        <h1>
+          Reliable Shipping for
+          <span>Your Wholesale Orders</span>
+        </h1>
+
+        <p class="shipping-intro">
+          At Supply Patch Distribution, we are committed to delivering your
+          wholesale orders efficiently and reliably. Please review our shipping
+          terms below.
+        </p>
+
+        <!-- <div class="shipping-status">
+          <span class="shipping-status-dot"></span>
+          Clear shipping terms before order confirmation
+        </div> -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Shipping Terms -->
+  <section class="shipping-content-section">
+    <div class="container shipping-layout">
+
+      <!-- Sidebar -->
+      <aside class="shipping-sidebar">
+        <div class="shipping-sidebar-card">
+
+          <p class="shipping-sidebar-label">ON THIS PAGE</p>
+
+          <nav class="shipping-nav">
+            <a href="#order-processing">Order Processing</a>
+            <a href="#shipping-methods">Shipping Methods</a>
+            <a href="#shipping-costs">Shipping Costs</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#order-inspection">Order Inspection</a>
+            <a href="#shipping-information">Shipping Information</a>
+            <a href="#contact-us">Contact Us</a>
+          </nav>
+
+        </div>
+      </aside>
+
+
+      <!-- Terms -->
+      <article class="shipping-document">
+
+        <section class="shipping-card" id="order-processing">
+          <div class="shipping-number">01</div>
+
+          <div class="shipping-card-content">
+            <h2>Order Processing</h2>
+
+            <p>
+              Orders are processed after payment and order confirmation.
+              Processing times may vary based on product availability and
+              order size.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="shipping-card" id="shipping-methods">
+          <div class="shipping-number">02</div>
+
+          <div class="shipping-card-content">
+            <h2>Shipping Methods</h2>
+
+            <p>
+              We ship using trusted freight and parcel carriers. The shipping
+              method is selected based on your order's size, weight, and
+              destination.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="shipping-card" id="shipping-costs">
+          <div class="shipping-number">03</div>
+
+          <div class="shipping-card-content">
+            <h2>Shipping Costs</h2>
+
+            <p>
+              Shipping charges are calculated based on order size, weight,
+              destination, and carrier rates.
+            </p>
+
+            <p>
+              All shipping costs will be provided before your order is
+              finalized.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="shipping-card" id="delivery">
+          <div class="shipping-number">04</div>
+
+          <div class="shipping-card-content">
+            <h2>Delivery</h2>
+
+            <p>
+              Estimated delivery times are provided for reference only and
+              may vary due to carrier delays, weather, or other circumstances
+              beyond our control.
+            </p>
+          </div>
+        </section>
+
+
+        <section class="shipping-card" id="order-inspection">
+          <div class="shipping-number">05</div>
+
+          <div class="shipping-card-content">
+            <h2>Order Inspection</h2>
+
+            <p>
+              Please inspect your shipment upon delivery.
+            </p>
+
+            <p>
+              Any visible damage or missing items should be reported to the
+              carrier and to Supply Patch Distribution within 48 hours of
+              receipt.
+            </p>
+
+            <div class="shipping-alert">
+              <span class="shipping-alert-icon">!</span>
+
+              <p>
+                Report visible damage or missing items within 48 hours of
+                receiving your shipment.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="shipping-card" id="shipping-information">
+          <div class="shipping-number">06</div>
+
+          <div class="shipping-card-content">
+            <h2>Shipping Information</h2>
+
+            <p>
+              Customers are responsible for providing accurate shipping
+              details.
+            </p>
+
+            <p>
+              Additional charges resulting from incorrect or incomplete
+              information may apply.
+            </p>
+          </div>
+        </section>
+
+
+        <section
+          class="shipping-card shipping-contact-card"
+          id="contact-us"
+        >
+          <div class="shipping-number">07</div>
+
+          <div class="shipping-card-content">
+            <h2>Contact Us</h2>
+
+            <p>
+              For questions regarding shipping or your order, please contact
+              our team.
+            </p>
+
+            <a
+              href="mailto:info@supplypatch.com"
+              class="shipping-email"
+            >
+              <span class="shipping-email-icon">✉</span>
+
+              <span>
+                <small>Email</small>
+                info@supplypatch.com
+              </span>
+            </a>
+          </div>
+        </section>
+
+
+        <div class="shipping-note">
+          <div class="shipping-note-icon">i</div>
+
+          <p>
+            Shipping methods, carrier availability, processing time, and final
+            delivery cost may vary depending on the products, order volume,
+            destination, and freight requirements.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="shipping-cta">
+    <div class="container">
+
+      <div class="shipping-cta-content">
+
+        <div>
+          <p class="shipping-label">NEED SHIPPING SUPPORT?</p>
+
+          <h2>Have a Question About Your Order?</h2>
+
+          <p>
+            Contact our team for help with shipping costs, delivery details,
+            order processing, freight requirements, or shipment questions.
+          </p>
+        </div>
+
+        <a
+          href="mailto:info@supplypatch.com"
+          class="shipping-button"
+        >
+          Contact Our Team
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+ 
+
+<footer>
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <img src="logo.png" alt="Supply Patch">
+
+      <p>
+        A trusted distribution partner delivering authentic branded inventory
+        to retailers, resellers, and eCommerce businesses nationwide.
+      </p>
+
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram">◎</a>
+
+        <a
+          href="mailto:adam.james@supplypatch.com"
+          aria-label="Email"
+        >
+          ✉
+        </a>
+      </div>
+    </div>
+
+
+    <div>
+      <h4>QUICK LINKS</h4>
+
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+
+    <div>
+      <h4>POLICIES</h4>
+
+      <a href="privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms-of-service.html">
+        Terms of Service
+      </a>
+      <a href="shipping.html">
+        Shipping Terms
+      </a>
+    </div>
+
+
+    <div class="footer-contact">
+      <h4>CONTACT US</h4>
+
+      <a
+        href="mailto:info@supplypatch.com"
+        class="footer-contact-item"
+      >
+        <span class="footer-contact-icon">📧</span>
+
+        <span>
+          <small>Email</small>
+         info@supplypatch.com
+        </span>
+      </a>
+
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📌</span>
+
+        <span>
+          <small>Location</small>
+          South Gate, CA 90280
+        </span>
+      </div>
+
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📞</span>
+
+        <span>
+          <small>phone</small>
+          (323) 555-5555
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+    <p>
+      Copyright © 2026 Supply Patch. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+
+ 
+</body>
+
+</html>
