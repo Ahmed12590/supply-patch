@@ -16,26 +16,6 @@
 
 <body>
 
-  <!-- ///loder code /// -->
-  <div class="site-loader" id="siteLoader" aria-label="Loading website">
-    <div class="loader-inner">
-      <div class="loader-logo-wrap">
-        <img src="logo.png" alt="Supply Patch" class="loader-logo">
-
-        <span class="loader-ring"></span>
-        <span class="loader-ring loader-ring-2"></span>
-      </div>
-
-      <p>Connecting you to better inventory</p>
-
-      <div class="loader-progress">
-        <span></span>
-      </div>
-    </div>
-  </div>
-
-
-
 
   <header class="site-header">
     <div class="container nav-wrap">
@@ -392,7 +372,7 @@
       <h4>QUICK LINKS</h4>
 
       <a href="about.html">About Us</a>
-      <a href="services.html">Our Services</a>
+      <a href="services.html">Services</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -460,22 +440,7 @@
 
   <script src="script.js"></script>
 
-  <script>
-    document.body.classList.add("loading");
 
-    window.addEventListener("load", function () {
-      const loader = document.getElementById("siteLoader");
-
-      setTimeout(function () {
-        loader.classList.add("loader-hidden");
-        document.body.classList.remove("loading");
-
-        setTimeout(function () {
-          loader.remove();
-        }, 700);
-      }, 650);
-    });
-  </script>
 </body>
 
 </html>
